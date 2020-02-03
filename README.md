@@ -5,7 +5,7 @@
 Get information about places via a RESTful API.
 
 ### Firebase Serverless Services
-* ```Cloud Functions``` - CRUD api endpoints functions
+* ```Cloud Functions``` - CRUD api endpoints
 * ```Cloud Firestore``` - NoSQL document database
 * ```Cloud Storage``` - store and serve user-generated content.
 
