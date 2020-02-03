@@ -1,5 +1,5 @@
 # ah-places-api
-![](https://img.shields.io/badge/version-1.0.0-cyan.svg)
+![](https://img.shields.io/badge/version-1.0.0-blue.svg)
 >A sample places api using Node.js, Express, Typescript and Firebase Cloud Services.
 
 Get information about places via a RESTful API.
@@ -13,6 +13,8 @@ Get information about places via a RESTful API.
 * ```Node.js```
 * ```Express```
 * ```TypeScript```
+
+Still a work in progress.
 
 ## Author
 >Arnold Haban
