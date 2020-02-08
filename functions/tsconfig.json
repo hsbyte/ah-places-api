@@ -6,11 +6,11 @@
     "outDir": "lib",
     "sourceMap": true,
     "strict": true,
-    "target": "es3"
+    "target": "es2019"
     // "watch": true
   },
   "compileOnSave": true,
   "include": [
-    "src"
+    "src/**/*.ts"
   ]
 }
