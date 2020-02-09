@@ -1,6 +1,7 @@
 import VERS from './util/version'
 
-const { getAllDestinations, getAllPlaces } = require('./controllers/destination')
+const { getDestinations, getDestination } = require('./controllers/destination')
+const { getPlaces, getPlace } = require('./controllers/place')
 const { signUp, signIn } = require('./controllers/user')
 
 import * as functions from 'firebase-functions'
@@ -15,9 +16,10 @@ app.use(cors(
     }
 ))
 
-app.get(`/${VERS}/destinations`, getAllDestinations)
-app.get(`/${VERS}/top_destinations/:count`)
-app.get(`/${VERS}/places`, getAllPlaces)
+app.get(`/${VERS}/destinations/:count?/:sort?/:order?`, getDestinations)
+app.get(`/${VERS}/destination/:id`, getDestination)
+app.get(`/${VERS}/places/:count?/:sort?/:order?`, getPlaces)
+app.get(`/${VERS}/place/:id`, getPlace)
 
 app.post(`/signup`, signUp)
 app.get('/signin/:uid', signIn)
